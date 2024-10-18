@@ -1,0 +1,140 @@
+@import url("https://fonts.googleapis.com/css2?family=Plus+Jakarta+Sans:ital,wght@0,200..800;1,200..800&display=swap");
+* {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+}
+
+h1 {
+  font-family: "Plus Jakarta Sans", sans-serif;
+  font-size: 90px;
+  line-height: 95px;
+  letter-spacing: -3%;
+  color: #fff;
+  font-weight: 700;
+}
+
+h4 {
+  font-family: "Plus Jakarta Sans", sans-serif;
+  font-size: 25px;
+  line-height: 35px;
+  letter-spacing: -2%;
+  color: #fff;
+  font-weight: 600;
+}
+
+p {
+  font-family: "Plus Jakarta Sans", sans-serif;
+  font-size: 18px;
+  line-height: 28px;
+  letter-spacing: 0%;
+  color: #BCBCBC;
+  font-weight: 400;
+}
+
+.RoboBodySection {
+  background-image: url(./img/ShipBg.webp);
+  background-position: center;
+  background-size: cover;
+  display: flex;
+  align-items: center;
+  overflow-x: hidden;
+  height: 100svh;
+}
+.RoboBodySection .RoboContainer {
+  flex-direction: row;
+  padding-top: 150px;
+  padding-bottom: 150px;
+}
+.RoboBodySection .LeftSection {
+  width: 50%;
+  height: 100%;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+}
+.RoboBodySection .LeftSection .RoboImageWrapper {
+  overflow: hidden;
+  position: relative;
+  border-radius: 6px;
+  box-shadow: 4px 4px 41px 0 rgba(91, 140, 247, 0.4745098039);
+  display: flex;
+  align-items: start;
+  background-color: #000000;
+}
+.RoboBodySection .RightSection {
+  width: 50%;
+  height: 100%;
+  padding-left: 30px;
+}
+.RoboBodySection .RightSection .Subheading {
+  padding-top: 40px;
+  padding-bottom: 10px;
+}
+.RoboBodySection .RightSection .ImageBox {
+  padding-top: 20px;
+  flex-wrap: wrap;
+  align-items: center;
+  gap: 20px;
+  justify-content: left;
+}
+.RoboBodySection .RightSection .ImageBox img {
+  border-radius: 6px;
+  cursor: pointer;
+}
+
+#RoboOne {
+  position: relative;
+  z-index: 6;
+  transition: box-shadow 0.6s ease, scale 0.6s ease, filter 0.6s ease;
+  scale: 1;
+}
+
+#RoboTwo, #RoboThree, #RoboFour {
+  position: absolute;
+  top: 0px;
+  left: 0px;
+  right: 0px;
+  bottom: 0px;
+  scale: 0.3;
+  transition: box-shadow 0.6s ease, scale 0.6s ease, filter 0.9s ease-in-out;
+}
+
+#PopImageOne {
+  box-shadow: 4px 4px 41px rgba(91, 140, 247, 0.4745098039);
+}
+
+@media screen and (max-width: 1200px) {
+  .RoboBodySection {
+    height: auto;
+  }
+  .RoboBodySection .RoboContainer {
+    flex-direction: column;
+    align-items: center;
+    padding-top: 80px;
+    padding-bottom: 80px;
+    gap: 50px;
+  }
+  .RoboBodySection .LeftSection {
+    width: 100%;
+  }
+  .RoboBodySection .RightSection {
+    width: 100%;
+    padding-left: 0px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+  }
+  .RoboBodySection .RightSection h1, .RoboBodySection .RightSection h4, .RoboBodySection .RightSection p {
+    text-align: center;
+  }
+  .RoboBodySection .RightSection .ImageBox {
+    align-items: center;
+    justify-content: center;
+  }
+  #RoboOne, #RoboTwo, #RoboThree, #RoboFour {
+    height: auto;
+    width: 100%;
+  }
+}/*# sourceMappingURL=ShowStyle.css.map */
